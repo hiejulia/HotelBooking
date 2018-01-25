@@ -1,0 +1,33 @@
+spring:
+  application:
+        name: booking-service
+  # Added to fix -  java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut hystrixCommandAnnotationPointcut
+  aop:
+        auto: false
+
+
+  cloud:
+    stream:
+        bindings:
+            bookingOrderOutput:
+                destination: amp.bookingOrdered
+            tweetOutput:
+                destination: tweet
+  #                content-type: application/*+avro
+        kafka:
+            binder:
+                zkNodes: localhost
+            binder:
+                brokers: localhost
+
+
+server:
+    port: 7052
+
+error:
+    path=/error
+eureka:
+  client:
+    service-url: http://localhost:8761/eureka
+
+# Discovery server Eureka

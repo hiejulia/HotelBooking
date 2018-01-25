@@ -1,0 +1,12 @@
+ 
+eureka:
+  image: localhost:5000/hien/eureka-server:SNAPSHOT
+  ports:
+    - "8761:8761"
+    
+restaurant-service:
+  image: localhost:5000/hien/hotel-service:SNAPSHOT
+  ports:
+    - "8080:8080"
+  links:
+    - eureka

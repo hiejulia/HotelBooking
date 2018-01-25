@@ -1,0 +1,42 @@
+# Eureka Server Configuration
+server:
+  port: 8761
+
+info:
+  component: Discovery Server
+
+eureka:
+    instance:
+          hostname: localhost
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        serviceUrl:
+          defaultZone: http://localhost:8761/eureka/
+    server:
+        waitTimeInMsWhenSyncEmpty: 0
+        enableSelfPreservation: false
+
+spring:
+  thymeleaf:
+    enabled: false     # Disable Thymeleaf
+
+---
+# For deployment in Docker containers
+spring:
+  profiles: docker
+
+server:
+    port: ${vcap.application.port:8761}
+
+eureka:
+    instance:
+          hostname: eureka
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        serviceUrl:
+          defaultZone: http://eureka:8761/eureka/
+    server:
+        waitTimeInMsWhenSyncEmpty: 0
+        enableSelfPreservation: false

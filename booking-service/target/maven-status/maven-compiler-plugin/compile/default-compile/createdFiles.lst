@@ -1,0 +1,17 @@
+com/project/hb/booking/domain/valueobject/avro/BookingOrder$Builder.class
+com/project/hb/booking/resources/BookingController.class
+com/project/hb/booking/domain/message/BookingMessageChannels.class
+com/project/hb/booking/domain/service/BaseService.class
+com/project/hb/booking/domain/valueobject/BookingVO.class
+com/project/hb/booking/domain/repository/ReadOnlyRepository.class
+com/project/hb/booking/domain/model/entity/BaseEntity.class
+com/project/hb/booking/domain/service/BookingService.class
+com/project/hb/booking/domain/valueobject/avro/BookingOrder.class
+com/project/hb/booking/domain/repository/InMemBookingRepository.class
+com/project/hb/booking/domain/repository/Repository.class
+com/project/hb/booking/domain/service/ReadOnlyBaseService.class
+com/project/hb/booking/BookingApp.class
+com/project/hb/booking/domain/model/entity/Booking.class
+com/project/hb/booking/domain/valueobject/avro/BookingOrder$1.class
+com/project/hb/booking/domain/repository/BookingRepository.class
+com/project/hb/booking/domain/model/entity/Entity.class
