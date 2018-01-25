@@ -185,7 +185,17 @@ Hotel Booking project
 
 
 
-
+### Tech stack 
++ Maven 
++ Spring cloud 
++ RabbitMQ 
++ Eureka 
++ Docker 
++ Apache Kafka
++ Apache Avro
++ ElasticSearch 
++ Logstash
++ Kibana
 
 
 
