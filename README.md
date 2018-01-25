@@ -96,7 +96,7 @@ Hotel Booking project
         + keytool -importcert -file path/to/.crt -alias <cert alias> -  keystore <JRE/JAVA_HOME>/jre/lib/security/cacerts -storepass changeit
         + update application.yaml with ssl config 
         + re build the zuul server with https
-        + 
+        + Go to : localhost:8765/hotelapi/v1/hotels/1 ( the same with localhost:3401/v1/hotels/1)
 
 + Logging and ELK stack (centralize logging)
     + Docker compose logs : commands 
@@ -169,13 +169,42 @@ Hotel Booking project
         + Go to : http://<zipkin host name>:9411/zipkin/  (zipkin dashboard)
         + 
 
++ Document API 
++ Versioning API 
+
 
 
 ### Run the project 
 + mvn clean install 
 + eureka server, turbine server, dashboard server , restaurant service, user service, booking service, api-service 
++ Eureka server : `http://localhost:8761/`
++ User API : `http://user-service/v1/users`
++ Hotel API : `http://hotel-service/v1/users`
++ Turbine Server : `http://localhost:8989/`
++ Dashboard Server: `http://localhost:7979`
+
+
+
+
+
 
 
 
 ## Screen shot 
++ 
 <img src="./img/1.png">
+
++ Eureka server 
+<img src="./img/1.png">
+<img src="./img/2.png">
+<img src="./img/3.png">
++ RabbitMQ server start
+<img src="./img/3.png"> 
+
+
+
+
++ Hystrix Dashboard 
+
+
+
