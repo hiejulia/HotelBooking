@@ -196,6 +196,7 @@ Hotel Booking project
 + ElasticSearch 
 + Logstash
 + Kibana
++ Test with JUnit
 
 
 
