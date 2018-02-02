@@ -3,5 +3,5 @@ MAINTAINER sourabhh
 EXPOSE 8080
 COPY maven /maven/
 CMD java -Dspring.profiles.active="docker" -jar \
-/maven/restaurant-service.jar server \
+/maven/hotel-service.jar server \
 /maven/docker-config.yml

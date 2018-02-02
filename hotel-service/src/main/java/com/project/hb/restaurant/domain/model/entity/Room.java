@@ -1,4 +1,4 @@
-package com.project.hb.restaurant.domain.model.entity;
+package com.project.hb.hotel.domain.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.math.BigInteger;

@@ -12,9 +12,7 @@ public class InMemUserRepository implements UserRepository<User, String> {
 
     private Map<String, User> entities;
 
-    /**
-     * Initialize the in-memory Restaurant Repository with empty Map
-     */
+    
     public InMemUserRepository() {
         entities = new HashMap();
         User user = new User("1", "Hien", "01 Main Str", "Helsinki", "99999999");

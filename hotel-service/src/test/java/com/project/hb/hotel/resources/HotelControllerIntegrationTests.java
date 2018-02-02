@@ -1,4 +1,4 @@
-package com.project.hb.restaurant.resources;
+package com.project.hb.hotel.resources;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-import com.project.hb.restaurant.domain.model.entity.Room;
+import com.project.hb.hotel.domain.model.entity.Room;
 import org.apache.http.client.methods.HttpHead;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -82,7 +82,7 @@ public class HotelControllerIntegrationTests extends
 
         assertNotNull(responseE);
 
-        // Should return no content as there is no restaurant with id 99
+        // Should return no content as there is no hotel with id 99
         assertEquals(HttpStatus.NO_CONTENT, responseE.getStatusCode());
     }
 
@@ -101,12 +101,12 @@ public class HotelControllerIntegrationTests extends
 
         assertNotNull(responseE);
 
-        // Should return no content as there is no restaurant with id 99
+        // Should return no content as there is no hotel with id 99
         assertEquals(HttpStatus.OK, responseE.getStatusCode());
         Map<String, Object>[] responses = responseE.getBody();
         assertNotNull(responses);
 
-        // Assumed only single instance exist for restaurant name contains word "Meurice"
+        // Assumed only single instance exist for hotel name contains word "Meurice"
         assertTrue(responses.length == 1);
 
         Map<String, Object> response = responses[0];
@@ -149,7 +149,7 @@ public class HotelControllerIntegrationTests extends
     public void testAdd() throws JsonProcessingException {
 
         Map<String, Object> requestBody = new HashMap<>();
-        requestBody.put("name", "La Plaza Restaurant");
+        requestBody.put("name", "La Plaza hotel");
         requestBody.put("id", "11");
         requestBody.put("location", "Helsinki");
         Map<String, Object> table1 = new HashMap<>();
@@ -180,7 +180,7 @@ public class HotelControllerIntegrationTests extends
         // Should return created (status code 201)
         assertEquals(HttpStatus.CREATED, responseE.getStatusCode());
 
-        //validating the newly created restaurant using API call
+        //validating the newly created hotel using API call
         Map<String, Object> response
                 = restTemplate.getForObject("http://localhost:" + port + "/v1/hotels/11", Map.class);
 
@@ -192,10 +192,10 @@ public class HotelControllerIntegrationTests extends
         assertEquals("11", id);
         String name = response.get("name").toString();
         assertNotNull(name);
-        assertEquals("La Plaza Restaurant", name);
+        assertEquals("La Plaza hotel", name);
         String address = response.get("address").toString();
         assertNotNull(address);
-        assertEquals("address of La Plaza Restaurant", address);
+        assertEquals("address of La Plaza hotel", address);
         boolean isModified = (boolean) response.get("isModified");
         assertEquals(false, isModified);
         List<Map<String, Object>> tableList2 = (List<Map<String, Object>>) response.get("tables");

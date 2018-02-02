@@ -1,16 +1,16 @@
-package com.project.hb.restaurant.resources;
+package com.project.hb.hotel.resources;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.project.hb.restaurant.controller.HotelController;
-import com.project.hb.restaurant.domain.model.entity.Hotel;
-import com.project.hb.restaurant.domain.repository.HotelRepository;
-import com.project.hb.restaurant.domain.service.HotelService;
-import com.project.hb.restaurant.domain.service.HotelServiceImpl;
-import com.project.hb.restaurant.resources.AbstractHotelControllerTests;
+import com.project.hb.hotel.controller.HotelController;
+import com.project.hb.hotel.domain.model.entity.Hotel;
+import com.project.hb.hotel.domain.repository.HotelRepository;
+import com.project.hb.hotel.domain.service.HotelService;
+import com.project.hb.hotel.domain.service.HotelServiceImpl;
+import com.project.hb.hotel.resources.AbstractHotelControllerTests;
 import org.junit.Before;
 
 public class HotelControllerTests extends AbstractHotelControllerTests {
@@ -106,7 +106,7 @@ public class HotelControllerTests extends AbstractHotelControllerTests {
     /**
      * Initialized Hotel Service
      */
-    protected HotelService restaurantService = new HotelServiceImpl(testHotelRepository);
+    protected HotelService hotelService = new HotelServiceImpl(testHotelRepository);
 
     /**
      * Setup method

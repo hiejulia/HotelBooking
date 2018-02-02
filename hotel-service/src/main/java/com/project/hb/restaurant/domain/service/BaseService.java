@@ -1,6 +1,6 @@
-package com.project.hb.restaurant.domain.service;
+package com.project.hb.hotel.domain.service;
 
-import com.project.hb.restaurant.domain.repository.Repository;
+import com.project.hb.hotel.domain.repository.Repository;
 import java.util.Collection;
 
 public abstract class BaseService<TE, T> extends ReadOnlyBaseService<TE, T> {

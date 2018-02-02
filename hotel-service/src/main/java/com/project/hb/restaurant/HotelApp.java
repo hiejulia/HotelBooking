@@ -1,4 +1,4 @@
-package com.project.hb.restaurant;
+package com.project.hb.hotel;
 
 import com.rabbitmq.client.ConnectionFactory;
 import org.slf4j.Logger;

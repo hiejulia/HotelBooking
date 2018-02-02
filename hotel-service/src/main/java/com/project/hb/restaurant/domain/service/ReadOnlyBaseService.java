@@ -1,6 +1,6 @@
-package com.project.hb.restaurant.domain.service;
+package com.project.hb.hotel.domain.service;
 
-import com.project.hb.restaurant.domain.repository.ReadOnlyRepository;
+import com.project.hb.hotel.domain.repository.ReadOnlyRepository;
 
 public abstract class ReadOnlyBaseService<TE, T> {
 

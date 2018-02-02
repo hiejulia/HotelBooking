@@ -1,4 +1,4 @@
-package com.project.hb.restaurant.domain.repository;
+package com.project.hb.hotel.domain.repository;
 
 import java.util.Collection;
 

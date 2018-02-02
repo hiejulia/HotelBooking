@@ -121,7 +121,7 @@ public class BookingControllerIntegrationTests {
         requestBody.put("name", "TestBkng 3");
         requestBody.put("id", "3");
         requestBody.put("userId", "3");
-        requestBody.put("restaurantId", "1");
+        requestBody.put("hotelId", "1");
         requestBody.put("tableId", "1");
         LocalDate nowDate = LocalDate.now();
         LocalTime nowTime = LocalTime.now();
@@ -156,9 +156,9 @@ public class BookingControllerIntegrationTests {
         String userId = response.get("userId").toString();
         assertNotNull(userId);
         assertEquals("3", userId);
-        String restaurantId = response.get("restaurantId").toString();
-        assertNotNull(restaurantId);
-        assertEquals("1", restaurantId);
+        String hotelId = response.get("hotelId").toString();
+        assertNotNull(hotelId);
+        assertEquals("1", hotelId);
         String tableId = response.get("tableId").toString();
         assertNotNull(tableId);
         assertEquals("1", tableId);

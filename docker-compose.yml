@@ -4,7 +4,7 @@ eureka:
   ports:
     - "8761:8761"
     
-restaurant-service:
+hotel-service:
   image: localhost:5000/hien/hotel-service:SNAPSHOT
   ports:
     - "8080:8080"

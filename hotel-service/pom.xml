@@ -7,11 +7,11 @@
         <version>hb-ED2-SNAPSHOT</version>
     </parent>
 
-    <name>online-table-reservation:restaurant-service</name>
-    <artifactId>restaurant-service</artifactId>
+    <name>online-table-reservation:hotel-service</name>
+    <artifactId>hotel-service</artifactId>
     <packaging>jar</packaging>
     <properties>
-        <start-class>com.project.hb.restaurant.RestaurantApp</start-class>
+        <start-class>com.project.hb.hotel.hotelApp</start-class>
         <!-- For Docker hub leave empty; use "localhost:5000/" for a local Docker Registry -->
         <docker.registry.name>localhost:5000/</docker.registry.name>
         <docker.repository.name>${docker.registry.name}sourabhh/${project.artifactId}</docker.repository.name>
@@ -57,7 +57,7 @@
                                     </bind>
                                 </volumes> -->
                                 <wait>
-                                    <url>http://${docker.host.address}:${docker.port}/v1/restaurants/1</url>
+                                    <url>http://${docker.host.address}:${docker.port}/v1/hotels/1</url>
                                     <time>500000</time>
                                 </wait>
                                 <log>
@@ -74,7 +74,7 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <configuration>
                     <!--<phase>integration-test</phase>-->
-                    <groups>com.project.hb.restaurant.resources.docker.DockerIT</groups>
+                    <groups>com.project.hb.hotel.resources.docker.DockerIT</groups>
                     <systemPropertyVariables>
                         <service.url>http://${docker.host.address}:${docker.port}/</service.url>
                     </systemPropertyVariables>
@@ -92,7 +92,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <excludedGroups>com.project.hb.restaurant.resources.docker.DockerIT</excludedGroups>
+                    <excludedGroups>com.project.hb.hotel.resources.docker.DockerIT</excludedGroups>
                 </configuration>
             </plugin>
         </plugins>

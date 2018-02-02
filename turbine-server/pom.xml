@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.project.hb</groupId>
-        <artifactId>6392_chapter7</artifactId>
+        <artifactId>project</artifactId>
         <version>hb-ED2-SNAPSHOT</version>
     </parent>
     <artifactId>turbine-server</artifactId>

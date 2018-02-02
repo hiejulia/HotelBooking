@@ -9,9 +9,9 @@ management:
 
 turbine:
     aggregator:
-        clusterConfig: USER-SERVICE,RESTAURANT-SERVICE
+        clusterConfig: USER-SERVICE,HOTEL-SERVICE
 #    clusterNameExpression: new String("default")
-    appConfig: user-service,restaurant-service
+    appConfig: user-service,hotel-service
 #    clusterNameExpression: 'default'
 #    InstanceMonitor:
 #        eventStream:

@@ -1,4 +1,4 @@
-package com.project.hb.restaurant.resources.docker;
+package com.project.hb.hotel.resources.docker;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;

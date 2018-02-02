@@ -1,13 +1,13 @@
-package com.project.hb.restaurant.resources;
+package com.project.hb.hotel.resources;
 
-import com.project.hb.restaurant.controller.HotelController;
-import com.project.hb.restaurant.domain.model.entity.Entity;
+import com.project.hb.hotel.controller.HotelController;
+import com.project.hb.hotel.domain.model.entity.Entity;
 
 import java.util.Collection;
 import java.util.logging.Logger;
 
-import com.project.hb.restaurant.domain.model.entity.Hotel;
-import com.project.hb.restaurant.dto.HotelDto;
+import com.project.hb.hotel.domain.model.entity.Hotel;
+import com.project.hb.hotel.dto.HotelDto;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

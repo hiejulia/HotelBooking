@@ -1,7 +1,7 @@
-package com.project.hb.restaurant.domain.service;
+package com.project.hb.hotel.domain.service;
 
-import com.project.hb.restaurant.domain.model.entity.Entity;
-import com.project.hb.restaurant.domain.model.entity.Hotel;
+import com.project.hb.hotel.domain.model.entity.Entity;
+import com.project.hb.hotel.domain.model.entity.Hotel;
 
 import java.util.ArrayList;
 import java.util.Collection;

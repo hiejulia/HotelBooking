@@ -35,11 +35,11 @@ public interface UserService {
 
     /**
      *
-     * @param restaurantId
+     * @param hotelId
      * @return
      * @throws Exception
      */
-    public Entity findById(String restaurantId) throws Exception;
+    public Entity findById(String hotelId) throws Exception;
 
     /**
      *

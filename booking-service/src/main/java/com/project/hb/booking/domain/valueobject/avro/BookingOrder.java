@@ -453,7 +453,7 @@ public class BookingOrder extends org.apache.avro.specific.SpecificRecordBase im
      * @param value The value of 'hotelId'.
      * @return This builder.
      */
-    public com.project.hb.booking.domain.valueobject.avro.BookingOrder.Builder setRestaurantId(java.lang.CharSequence value) {
+    public com.project.hb.booking.domain.valueobject.avro.BookingOrder.Builder sethotelId(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.hotelId = value;
       fieldSetFlags()[3] = true;
@@ -464,7 +464,7 @@ public class BookingOrder extends org.apache.avro.specific.SpecificRecordBase im
      * Checks whether the 'hotelId' field has been set.
      * @return True if the 'hotelId' field has been set, false otherwise.
      */
-    public boolean hasRestaurantId() {
+    public boolean hashotelId() {
       return fieldSetFlags()[3];
     }
 
@@ -473,7 +473,7 @@ public class BookingOrder extends org.apache.avro.specific.SpecificRecordBase im
      * Clears the value of the 'hotelId' field.
      * @return This builder.
      */
-    public com.project.hb.booking.domain.valueobject.avro.BookingOrder.Builder clearRestaurantId() {
+    public com.project.hb.booking.domain.valueobject.avro.BookingOrder.Builder clearhotelId() {
       hotelId = null;
       fieldSetFlags()[3] = false;
       return this;

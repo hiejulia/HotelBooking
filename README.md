@@ -8,7 +8,7 @@ Hotel Booking project
     + Client : RestTemplate, FeignClient, Eureka
 + Load balancing: Ribbon
 + Circuit breaker : Hystrix
-    + Restaurant
+    + Hotel
     + User 
     + Booking 
 + Monitoring dashboard: Nexflix Turbine
@@ -34,7 +34,7 @@ Hotel Booking project
             + Create Dockerfile 
             + Config docker-assembly.xml 
             + Build Docker image : `mvn docker:build`
-            + Build Docker image : `docker run -it -p 8080:8080 sourabhh/restaurant-service:PACKT-SNAPSHOT`
+            + Build Docker image : `docker run -it -p 8080:8080 hihi/hotel-service:-SNAPSHOT`
             + Run Docker using Maven: 
                 + Add Configuration in pom.xml
                 + Run : `mvc docker:start`
@@ -51,7 +51,7 @@ Hotel Booking project
                 + Before start : 
                     + Set up Docker local registry 
                     + Build docker local registry : `docker run -d -p 5000:5000 --restart=always --name registry registry:2`
-                    + Push , pull commands for local images : `docker push localhost:5000/sourabhh/restaurant-service:PACKT- SNAPSHOT`,`docker-compose pull`
+                    + Push , pull commands for local images : `docker push localhost:5000/sourabhh/hotel-service:- SNAPSHOT`,`docker-compose pull`
                     + Execute docker-compose : `docker-compose up -d`
                 + Use Docker compose : manage docker containers
                 + Docker compose : number of containers, docker image, port, link 
@@ -176,7 +176,7 @@ Hotel Booking project
 
 ### Run the project 
 + mvn clean install 
-+ eureka server, turbine server, dashboard server , restaurant service, user service, booking service, api-service 
++ eureka server, turbine server, dashboard server , hotel service, user service, booking service, api-service 
 + Eureka server : `http://localhost:8761/`
 + User API : `http://user-service/v1/users`
 + Hotel API : `http://hotel-service/v1/users`

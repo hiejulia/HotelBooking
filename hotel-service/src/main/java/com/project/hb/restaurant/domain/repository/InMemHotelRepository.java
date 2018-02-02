@@ -1,11 +1,11 @@
-package com.project.hb.restaurant.domain.repository;
+package com.project.hb.hotel.domain.repository;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.project.hb.restaurant.domain.model.entity.Hotel;
+import com.project.hb.hotel.domain.model.entity.Hotel;
 import org.springframework.stereotype.Repository;
 
 @Repository("hotelRepository")
@@ -14,7 +14,7 @@ public class InMemHotelRepository implements HotelRepository<Hotel, String> {
     private Map<String, Hotel> entities;
 
     /**
-     * Initialize the in-memory Restaurant Repository with empty Map
+     * Initialize the in-memory hotel Repository with empty Map
      */
     public InMemHotelRepository() {
         entities = new HashMap();

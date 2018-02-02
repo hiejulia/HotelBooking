@@ -1,16 +1,16 @@
-package com.project.hb.restaurant.controller;
+package com.project.hb.hotel.controller;
 
 //import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.project.hb.restaurant.domain.model.entity.Entity;
+import com.project.hb.hotel.domain.model.entity.Entity;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import com.project.hb.restaurant.dto.HotelDto;
-import com.project.hb.restaurant.domain.model.entity.Hotel;
-import com.project.hb.restaurant.domain.service.HotelService;
+import com.project.hb.hotel.dto.HotelDto;
+import com.project.hb.hotel.domain.model.entity.Hotel;
+import com.project.hb.hotel.domain.service.HotelService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

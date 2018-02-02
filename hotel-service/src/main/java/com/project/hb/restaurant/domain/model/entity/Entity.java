@@ -1,4 +1,4 @@
-package com.project.hb.restaurant.domain.model.entity;
+package com.project.hb.hotel.domain.model.entity;
 
 public abstract class Entity<T> {
 

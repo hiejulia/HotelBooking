@@ -12,7 +12,7 @@
         <module name="dashboard-server" />
         <module name="eureka-server" />
         <module name="online-table-reservation-common" />
-        <module name="restaurant-service" />
+        <module name="hotel-service" />
         <module name="security-service" />
         <module name="turbine-server" />
         <module name="user-service" />
@@ -27,7 +27,7 @@
       <module name="dashboard-server" target="1.9" />
       <module name="eureka-server" target="1.9" />
       <module name="online-table-reservation-common" target="1.9" />
-      <module name="restaurant-service" target="1.9" />
+      <module name="hotel-service" target="1.9" />
       <module name="security-service" target="1.9" />
       <module name="turbine-server" target="1.9" />
       <module name="user-service" target="1.9" />

@@ -113,7 +113,7 @@ public class BookingServiceImpl extends BaseService<Booking, String>
         final BookingOrder.Builder boBuilder = BookingOrder.newBuilder();
         boBuilder.setId(booking.getId());
         boBuilder.setName(booking.getName());
-        boBuilder.setRestaurantId(booking.getHotelId());
+        boBuilder.setHotelId(booking.getHotelId());
         boBuilder.setTableId(booking.getRoomId());
         boBuilder.setUserId(booking.getUserId());
         boBuilder.setDate(booking.getDate().toString());

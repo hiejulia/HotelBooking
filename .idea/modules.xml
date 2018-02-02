@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/dashboard-server/dashboard-server.iml" filepath="$PROJECT_DIR$/dashboard-server/dashboard-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/online-table-reservation-common.iml" filepath="$PROJECT_DIR$/common/online-table-reservation-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/restaurant-service/restaurant-service.iml" filepath="$PROJECT_DIR$/restaurant-service/restaurant-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hotel-service/hotel-service.iml" filepath="$PROJECT_DIR$/hotel-service/hotel-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/security-service/security-service.iml" filepath="$PROJECT_DIR$/security-service/security-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/turbine-server/turbine-server.iml" filepath="$PROJECT_DIR$/turbine-server/turbine-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />

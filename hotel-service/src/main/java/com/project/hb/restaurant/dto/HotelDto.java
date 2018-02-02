@@ -1,6 +1,6 @@
-package com.project.hb.restaurant.dto;
+package com.project.hb.hotel.dto;
 
-import com.project.hb.restaurant.domain.model.entity.Room;
+import com.project.hb.hotel.domain.model.entity.Room;
 
 import java.util.ArrayList;
 import java.util.List;

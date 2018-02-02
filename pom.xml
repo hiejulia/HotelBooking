@@ -15,8 +15,8 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
     </dependencies>
-    <name>6392_HB</name>
-    <description>Master Microservices with Java Ed 2, Chapter 5</description>
+    <name>hb</name>
+    <description>project</description>
 
     <packaging>pom</packaging>
     <properties>
